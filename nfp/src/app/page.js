@@ -205,7 +205,7 @@ export default function Component() {
                   type="checkbox"
                 />
                 <label className="ml-2 text-zinc-500 md:text-xl dark:text-zinc-400" htmlFor="captcha">
-                  I'm not a robot
+                  I am not a robot
                 </label>
               </div>
               <button
