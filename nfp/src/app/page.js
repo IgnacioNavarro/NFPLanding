@@ -1,10 +1,7 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/abb1iZDoB9o
- */
 import Link from "next/link"
 
 export default function Component() {
+  <link rel="icon" href="/favicon.ico" sizes="any" />
   return (
     <div className="relative flex flex-col bg-light-blue-200 dark:bg-light-blue-900">
       <header className="w-full bg-white dark:bg-zinc-900 py-4 px-6 shadow-md">
@@ -12,7 +9,7 @@ export default function Component() {
           <img
             alt="Logo"
             height={40}
-            src="/placeholder.svg"
+            src="android-chrome-512x512.png"
             style={{
               aspectRatio: "100/40",
               objectFit: "cover",
@@ -250,16 +247,16 @@ export default function Component() {
 
 
 
-      <button className="fixed right-4 bottom-4 w-12 h-12 rounded-full bg-green-500 shadow-lg flex items-center justify-center">
+      <button className="fixed right-4 bottom-4 w-30 h-30 rounded-3xl bg-green-500 shadow-lg flex items-center justify-center">
         <img
           alt="Floating Button Image"
-          height="24"
-          src="/placeholder.svg"
+          height="200"
+          src="/images/NFP BOX NO BACKGROUND.png"
           style={{
             aspectRatio: "24/24",
             objectFit: "cover",
           }}
-          width="24"
+          width="200"
         />
       </button>
     </div>
