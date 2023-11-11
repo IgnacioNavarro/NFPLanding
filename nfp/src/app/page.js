@@ -164,7 +164,7 @@ export default function Component() {
                 </svg>
               </summary>
               <p className="mt-2 text-zinc-500 dark:text-zinc-400">
-                Puedes obtener tu NFP en la página de la colección, pulsando en el botón <b>"Consigue tu NFP"</b>. Podrás pagar con <b>tarjeta de crédito o criptomonedas</b>.
+                Puedes obtener tu NFP en la página de la colección, pulsando en el botón <b>Consigue tu NFP</b>. Podrás pagar con <b>tarjeta de crédito o criptomonedas</b>.
                 Tras ello, recibirás una caja de pizza, la cual contiene tu NFP, que se revelará <b>más adelante</b>.
               </p>
             </details>
