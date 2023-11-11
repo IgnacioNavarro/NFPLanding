@@ -8,45 +8,42 @@ export default function Component() {
         <div className="container mx-auto flex justify-between items-center">
           <img
             alt="Logo"
-            height={40}
-            src="android-chrome-512x512.png"
-            style={{
-              aspectRatio: "100/40",
-              objectFit: "cover",
-            }}
-            width={100}
+            src="images/NFP WORD.png"
+            className="h-8 w-auto sm:h-10 mr-4"
           />
           <nav>
             <ul className="flex space-x-4">
               <li>
                 <Link
                   className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500"
-                  href="#"
+                  href="#about"
                 >
-                  About
+                  Sobre NFP
                 </Link>
               </li>
               <li>
                 <Link
                   className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500"
-                  href="#"
+                  href="#contact"
                 >
-                  Contact
+                  Contacto
                 </Link>
               </li>
               <li>
                 <Link
-                  className="inline-flex h-9 items-center justify-center rounded-md bg-green-500 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-600 disabled:pointer-events-none disabled:opacity-50 dark:bg-green-500 dark:text-white dark:hover:bg-green-600 dark:focus-visible:ring-green-600"
+                  className="h-9 items-center justify-center rounded-md bg-green-500 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-600 disabled:pointer-events-none disabled:opacity-50 dark:bg-green-500 dark:text-white dark:hover:bg-green-600 dark:focus-visible:ring-green-600"
                   href="#"
                 >
-                  Mint Now
+                  Obtener
                 </Link>
               </li>
             </ul>
           </nav>
         </div>
       </header>
-      <section className="w-full py-12 md:py-24 lg:py-32 h-[calc(100dvh-10dvh)]">
+
+
+      <section className="w-full py-12 md:py-24 lg:py-30 h-[calc(100dvh-8dvh)]">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -54,7 +51,8 @@ export default function Component() {
                 Non-fungible Pizza
               </h1>
               <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl dark:text-zinc-400">
-                Discover and collect our unique pizza-themed NFTs. Join the community of digital art enthusiasts.
+                
+                Descubre y colecciona nuestros <b>NFTs benéficos</b> con temática de pizza. Únete a la comunidad y apoya a las <b>personas sin hogar y que más lo necesitan</b>.
               </p>
             </div>
             <div className="space-x-4">
@@ -62,37 +60,40 @@ export default function Component() {
                 className="inline-flex h-9 items-center justify-center rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-zinc-50 shadow transition-colors hover:bg-zinc-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90 dark:focus-visible:ring-zinc-300"
                 href="#"
               >
-                Explore Collection
+                Explora la colección
               </Link>
               <Link
                 className="inline-flex h-9 items-center justify-center rounded-md bg-green-500 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-600 disabled:pointer-events-none disabled:opacity-50 dark:bg-green-500 dark:text-white dark:hover:bg-green-600 dark:focus-visible:ring-green-600"
                 href="#"
               >
-                Mint NFT
+                Consigue tu NFP
               </Link>
               <Link
-                className="inline-flex h-9 items-center justify-center rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-300"
-                href="#"
+                className="inline-flex h-9 items-center justify-center rounded-md border border-zinc-200 bg-white px-4 py-2 my-4 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-100 hover:text-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 disabled:pointer-events-none disabled:opacity-50 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-300"
+                href="#about"
               >
-                Learn more
+                Más
               </Link>
             </div>
           </div>
         </div>
+        <div className="container px-4 md:px-6 mx-auto">
+          <img alt="Pizza Image" className="mx-auto" src="/images/NFP BOX NO BACKGROUND.png" />
+        </div>
       </section>
 
 
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-zinc-50 dark:bg-zinc-950">
+      <section className="w-full py-12 md:py-24 min-[300px]:px-5 lg:py-32 bg-zinc-50 dark:bg-zinc-950" id="#about">
       <div
           className="container px-4 md:px-6 mt-12 scroll-opacity-100 bg-white dark:bg-zinc-900 rounded-lg p-4 mx-auto max-w-[700px] shadow-md"
           id="about">
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none mb-4 text-center text-zinc-900 dark:text-zinc-50">
-            Frequently Asked Questions
+            Sobre NFP
           </h2>
           <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 shadow-md">
             <details className="relative mb-4">
               <summary className="font-semibold text-zinc-900 dark:text-zinc-50 cursor-pointer flex justify-between items-center">
-                <span>What are NFTs?</span>
+                <span>¿Qué es NFP?</span>
                 <svg
                   className=" absolute right-0 mr-2"
                   fill="none"
@@ -110,14 +111,16 @@ export default function Component() {
                 </svg>
               </summary>
               <p className="mt-2 text-zinc-500 dark:text-zinc-400">
-                NFTs, or non-fungible tokens, represent ownership of unique items or assets on a blockchain.
+                NFP o Non-fungible Pizza es una colección de token no fungibles (NFTs) en forma de imagen únicas con temática de pizza.
+                <br/><br/>Gracias a la tecnología blockchain, cada NFT es único y no puede ser replicado, lo que lo convierte en un objeto de colección.
               </p>
             </details>
           </div>
+
           <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 shadow-md mt-4">
             <details className="relative mb-4">
               <summary className="font-semibold text-zinc-900 dark:text-zinc-50 cursor-pointer flex justify-between items-center">
-                <span>How to claim?</span>
+                <span>Nuestro Objetivo</span>
                 <svg
                   className=" absolute right-0 mr-2"
                   fill="none"
@@ -135,14 +138,15 @@ export default function Component() {
                 </svg>
               </summary>
               <p className="mt-2 text-zinc-500 dark:text-zinc-400">
-                To claim an NFT, you need to set up a digital wallet, mint the NFT, and then receive it in your wallet.
+                El objetivo de NFP es recaudar dinero para <b>apoyar a las personas sin hogar y que más lo necesitan</b>, de esta manera, <b>todo lo obtenido de la venta</b> de los NFTs será <b>donado</b> a quien lo necesitan en forma de pizzas o alimentos básicos.
               </p>
             </details>
           </div>
+
           <div className="bg-white dark:bg-zinc-900 rounded-lg p-4 shadow-md mt-4">
             <details className="relative mb-4">
               <summary className="font-semibold text-zinc-900 dark:text-zinc-50 cursor-pointer flex justify-between items-center">
-                <span>Our Aim</span>
+                <span>¿Cómo obtenerlo?</span>
                 <svg
                   className=" absolute right-0 mr-2"
                   fill="none"
@@ -160,8 +164,8 @@ export default function Component() {
                 </svg>
               </summary>
               <p className="mt-2 text-zinc-500 dark:text-zinc-400">
-                Our aim is to build a community of digital art enthusiasts, revolutionize the perception of art, and
-                promote blockchain technology.
+                Puedes obtener tu NFP en la página de la colección, pulsando en el botón <b>"Consigue tu NFP"</b>. Podrás pagar con <b>tarjeta de crédito o criptomonedas</b>.
+                Tras ello, recibirás una caja de pizza, la cual contiene tu NFP, que se revelará <b>más adelante</b>.
               </p>
             </details>
           </div>
@@ -173,25 +177,25 @@ export default function Component() {
       <section className="w-full py-12 md:py-24 lg:py-32" id="contact">
         <div className="container px-4 md:px-6 mx-auto max-w-[700px]">
           <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none mb-4 text-center">
-            Contact Us
+            Contacta con Nosotros
           </h2>
           <form className="space-y-4">
             <input
-              aria-label="Your Name"
+              aria-label="Nombre"
               className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-              placeholder="Your Name"
+              placeholder="Nombre"
               type="text"
             />
             <input
-              aria-label="Your Email"
+              aria-label="Email"
               className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
               placeholder="Your Email"
               type="email"
             />
             <textarea
-              aria-label="Your Message"
+              aria-label="Mensaje"
               className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-              placeholder="Your Message"
+              placeholder="Mensaje"
             />
             <div className="flex items-center justify-between">
               <div>
@@ -210,7 +214,7 @@ export default function Component() {
                 type="submit"
                 variant="default"
               >
-                Submit
+                Enviar
               </button>
             </div>
           </form>
@@ -229,7 +233,7 @@ export default function Component() {
                   className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500"
                   href="#"
                 >
-                  Terms of Service
+                  Términos y Condiciones
                 </Link>
               </li>
               <li>
@@ -237,7 +241,7 @@ export default function Component() {
                   className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500"
                   href="#"
                 >
-                  Privacy Policy
+                  Política de Privacidad
                 </Link>
               </li>
             </ul>
@@ -246,19 +250,6 @@ export default function Component() {
       </footer>
 
 
-
-      <button className="fixed right-4 bottom-4 w-30 h-30 rounded-3xl bg-green-500 shadow-lg flex items-center justify-center">
-        <img
-          alt="Floating Button Image"
-          height="200"
-          src="/images/NFP BOX NO BACKGROUND.png"
-          style={{
-            aspectRatio: "24/24",
-            objectFit: "cover",
-          }}
-          width="200"
-        />
-      </button>
     </div>
   )
 }
