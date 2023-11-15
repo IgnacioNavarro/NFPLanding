@@ -1,3 +1,4 @@
+import PizzaBox from "@/component/spline"
 import Link from "next/link"
 
 export default function Component() {
@@ -78,7 +79,7 @@ export default function Component() {
           </div>
         </div>
         <div className="container px-4 md:px-6 mx-auto">
-          <img alt="Pizza Image" className="mx-auto" src="/images/NFP BOX NO BACKGROUND.png" />
+          <PizzaBox />
         </div>
       </section>
 
