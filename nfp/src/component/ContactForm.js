@@ -4,7 +4,7 @@ import axios from 'axios';
 import ReCAPTCHA from 'react-google-recaptcha';
 import 'dotenv/config';
 
-export default () => {
+export default function ContactForm() {
 
     const [recaptcha, setRecaptcha] = useState('');
 
