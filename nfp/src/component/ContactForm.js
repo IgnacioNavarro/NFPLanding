@@ -125,13 +125,19 @@ export default function ContactForm() {
                     value={inputs.Mensaje}
                 />
                 <div className="flex items-center justify-between">
-                    <div>
+                    <div className='w-200'>
                         <ReCAPTCHA
                             id='ReCAPTCHA'
                             name='ReCAPTCHA'
                             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                             onChange={value => setRecaptcha(value)}
                             required
+                            size={
+                                window.innerWidth <= 500
+                                    ? 'compact'
+                                    : 'normal'
+                            }
+
                         />
                     </div>
                     <button

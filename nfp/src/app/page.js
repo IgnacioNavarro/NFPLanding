@@ -15,11 +15,14 @@ export default function Component() {
             src="images/NFP WORD.png"
             className="h-8 w-auto sm:h-10 mr-4"
           />
+
+
           <nav>
             <ul className="flex space-x-4">
+
               <li>
                 <Link
-                  className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500"
+                  className="text-zinc-900 hover:text-green-500 dark:text-zinc-50 dark:hover:text-green-500 hidden md:block"
                   href="#about"
                 >
                   Sobre NFP
