@@ -1,8 +1,11 @@
+import ContactForm from "@/component/ContactForm"
 import PizzaBox from "@/component/spline"
 import Link from "next/link"
+require('dotenv').config()
 
 export default function Component() {
   <link rel="icon" href="/favicon.ico" sizes="any" />
+
   return (
     <div className="relative flex flex-col bg-light-blue-200 dark:bg-light-blue-900">
       <header className="w-full bg-white dark:bg-zinc-900 py-4 px-6 shadow-md">
@@ -44,7 +47,7 @@ export default function Component() {
       </header>
 
 
-      <section className="w-full py-12 md:py-24 lg:py-30 h-[calc(100dvh-8dvh)]">
+      <section className="w-full pt-12 md:py-24 lg:py-30">
         <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
@@ -77,9 +80,9 @@ export default function Component() {
               </Link>
             </div>
           </div>
+          <div className="px-4 md:px-6 mx-auto">
+          <PizzaBox className="h-10"/>
         </div>
-        <div className="container px-4 md:px-6 mx-auto">
-          <PizzaBox />
         </div>
       </section>
 
@@ -176,50 +179,7 @@ export default function Component() {
 
 
       <section className="w-full py-12 md:py-24 lg:py-32" id="contact">
-        <div className="container px-4 md:px-6 mx-auto max-w-[700px]">
-          <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl/none mb-4 text-center">
-            Contacta con Nosotros
-          </h2>
-          <form className="space-y-4">
-            <input
-              aria-label="Nombre"
-              className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-              placeholder="Nombre"
-              type="text"
-            />
-            <input
-              aria-label="Email"
-              className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-              placeholder="Your Email"
-              type="email"
-            />
-            <textarea
-              aria-label="Mensaje"
-              className="block w-full rounded-md border border-zinc-200 bg-white px-4 py-2 text-sm shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-              placeholder="Mensaje"
-            />
-            <div className="flex items-center justify-between">
-              <div>
-                <input
-                  aria-label="Captcha"
-                  className="rounded border border-zinc-200 bg-white shadow-sm transition-colors hover:border-zinc-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-950 dark:border-zinc-800 dark:bg-zinc-950 dark:hover:border-zinc-700 dark:focus-visible:ring-zinc-300"
-                  id="captcha"
-                  type="checkbox"
-                />
-                <label className="ml-2 text-zinc-500 md:text-xl dark:text-zinc-400" htmlFor="captcha">
-                  I am not a robot
-                </label>
-              </div>
-              <button
-                className="inline-flex h-9 items-center justify-center rounded-md bg-green-500 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-green-600 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-600 disabled:pointer-events-none disabled:opacity-50 dark:bg-green-500 dark:text-white dark:hover:bg-green-600 dark:focus-visible:ring-green-600"
-                type="submit"
-                variant="default"
-              >
-                Enviar
-              </button>
-            </div>
-          </form>
-        </div>
+        <ContactForm />
       </section>
 
     <footer className="w-full bg-white dark:bg-zinc-900 py-4 px-6 shadow-md">

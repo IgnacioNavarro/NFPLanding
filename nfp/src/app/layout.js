@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Analytics } from '@vercel/analytics/react';
+require('dotenv').config();
 
 const inter = Inter({ subsets: ['latin'] })
 
